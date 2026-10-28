@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* TOP ORANGE BAR */
+.top-bar {
+    min-height: 68px;
+    background: #c94000;
+    color: white;
+    padding: 0 4%;
+}
+
+.top-links {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.top-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.country {
+    background: #f8e5dc;
+    color: #333;
+    border-radius: 15px;
+    padding: 9px 14px;
+}
+
+.banking-link {
+    background: #ad3500;
+    padding: 24px;
+    /* transform: skewX(-23deg); */
+
+}
+
+/* MAIN WHITE NAVIGATION */
+.main-nav {
+    min-height: 107px;
+    padding: 15px 13.3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: white;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #303943;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.logo {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.logo-box {
+    width: 88px;
+    height: 88px;
+    background: #ed3d00;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+}
+
+.logo-square {
+    width: 20px;
+    height: 20px;
+    background: white;
+    align-self: flex-end;
+    margin-right: 16px;
+}
+
+.logo small {
+    display: block;
+    margin-top: 7px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* PROMOTIONAL BACKGROUND IMAGE */
+.hero {
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("./image/woman\ fshn\ img.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* EVENT TEXT */
+.hero-copy {
+    position: absolute;
+    z-index: 2;
+    left: 13.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 390px;
+}
+
+.hero-copy h1 {
+    color: #e64b00;
+    font-size: clamp(32px, 3vw, 52px);
+    line-height: 1.35;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.event-description {
+    color: #111;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.free-text {
+    color: #ed5a00;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.details-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 22px 35px;
+    background: #c94000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ONLINE BANKING PANEL */
+.login-panel {
+    position: absolute;
+    z-index: 3;
+    top: 42px;
+    right: 13.3%;
+    width: 300px;
+    min-height: 284px;
+    background: #f7f7f7;
+    box-shadow: 0 2px 7px #0002;
+    text-align: center;
+}
+
+.login-panel h2 {
+    background: white;
+    padding: 22px 10px;
+    font-size: 19px;
+}
+
+.login-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 8px 20px 28px;
+}
+
+.login-tabs button {
+    background: transparent;
+    border: none;
+    padding: 14px 16px;
+    color: #44505b;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-tabs .active-tab {
+    color: #d84300;
+    border-bottom: 2px solid #e64b00;
+    font-weight: bold;
+}
+
+.login-button {
+    display: block;
+    width: 62%;
+    margin: 0 auto 30px;
+    padding: 15px;
+    border: none;
+    background: #c94000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 25px;
+}
+
+.login-bottom a {
+    color: #44505b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-bottom span {
+    width: 1px;
+    height: 20px;
+    background: #bbb;
+}
+
+/* FLOATING CHAT BUTTON */
+.chat-button {
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    width: 72px;
+    height: 72px;
+    border: none;
+    border-radius: 50%;
+    background: #e94724;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.chat-count {
+    position: absolute;
+    top: -7px;
+    right: -3px;
+    width: 23px;
+    height: 23px;
+    background: #e94724;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* TABLETS */
+@media (max-width: 1100px) {
+    .main-nav {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero-copy {
+        left: 5%;
+        width: 340px;
+    }
+
+    .login-panel {
+        right: 5%;
+        width: 260px;
+    }
+}
+
+/* PHONES */
+@media (max-width: 700px) {
+
+    .top-bar,
+    .top-links {
+        padding: 10px;
+    }
+
+    .top-links {
+        gap: 14px;
+    }
+
+    .top-links a {
+        font-size: 13px;
+    }
+
+    .banking-link {
+        padding: 10px;
+    }
+
+    .main-nav {
+        padding: 18px;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .logo-box {
+        width: 65px;
+        height: 65px;
+        font-size: 18px;
+    }
+
+    .logo small {
+        font-size: 8px;
+    }
+
+    .hero {
+        min-height: 1000px;
+        background-position: center top;
+        background-size: auto 650px;
+        background-color: #e9e9e7;
+    }
+
+    .hero-copy {
+        left: 22px;
+        top: 30px;
+        transform: none;
+        width: calc(100% - 44px);
+    }
+
+    .hero-copy h1 {
+        font-size: 34px;
+    }
+
+    .event-description {
+        font-size: 15px;
+    }
+
+    .free-text {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .login-panel {
+        top: 660px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: min(340px, calc(100% - 44px));
+    }
+
+    .chat-button {
+        width: 55px;
+        height: 55px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* =================================
+   INNOVATIVE BANKING PRODUCTS
+================================= */
+
+.products-section {
+    width: 100%;
+    background-color: #f7f8f8;
+    padding: 104px 30px 70px;
+}
+
+/* Section title and subtitle */
+.section-heading {
+    text-align: center;
+    margin-bottom: 69px;
+}
+
+.section-heading h2 {
+    color: #394652;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.section-heading p {
+    color: #596773;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+/* 8 product columns */
+
+.products-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+/* Each product */
+.product-card {
+    min-width: 0;
+}
+
+/* Product images */
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+
+/* Product titles */
+.product-card h3 {
+    color: #444c54;
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 19px;
+}
+
+/* Product descriptions */
+.product-card p {
+    color: #697177;
+    font-size: 19px;
+    line-height: 1.45;
+    margin-bottom: 30px;
+}
+
+/* Orange product links */
+.product-card a {
+    display: inline-block;
+    color: #d44400;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+/* TABLET: two columns */
+@media (max-width: 1100px) {
+    .products-section {
+        padding: 70px 5% 55px;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 45px 30px;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+}
+
+/* PHONE: one column */
+@media (max-width: 600px) {
+    .products-section {
+        padding: 45px 22px 60px;
+    }
+
+    .section-heading {
+        margin-bottom: 38px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .section-heading p {
+        font-size: 17px;
+    }
+
+    .section-heading br {
+        display: none;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .product-card h3 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 14px;
+    }
+
+    .product-card p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .product-card a {
+        font-size: 17px;
+    }
+}
+
+
+
+/* FOOTER */
+.site-footer {
+    width: 100%;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #34485c;
+    padding: 55px 0 25px;
+    box-sizing: border-box;
+}
+
+/* CENTER THE ENTIRE FOOTER */
+.footer-container {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+/* FIVE EVENLY SPACED COLUMNS */
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: 35px;
+    align-items: start;
+    width: 100%;
+}
+
+.footer-column {
+    min-width: 0;
+}
+
+.footer-column h3 {
+    margin: 0 0 26px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #172b3e;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin: 0 0 23px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #526276;
+    overflow-wrap: anywhere;
+}
+
+.footer-column .footer-extra {
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+/* HORIZONTAL LINE */
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: #dedede;
+    margin: 48px 0 40px;
+}
+
+/* LOGO AND CONTACT NUMBERS */
+.footer-contact {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer-logo img {
+    display: block;
+    width: 205px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.phone-numbers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px 22px;
+}
+
+.phone-numbers li {
+    min-width: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #526276;
+    white-space: nowrap;
+}
+
+/* TABLET */
+@media (max-width: 1050px) {
+    .footer-columns {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+
+    .footer-contact {
+        grid-template-columns: 200px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .phone-numbers {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .site-footer {
+        padding-top: 35px;
+    }
+
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+    }
+
+    .footer-column li {
+        overflow-wrap: anywhere;
+    }
+
+    .footer-divider {
+        margin: 35px 0;
+    }
+
+    .footer-contact {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .phone-numbers {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .phone-numbers li {
+        white-space: normal;
+    }
+}
