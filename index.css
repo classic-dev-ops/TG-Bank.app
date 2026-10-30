@@ -11,18 +11,22 @@ body {
 
 /* TOP ORANGE BAR */
 .top-bar {
-    min-height: 68px;
+    min-height: 50px;
     background: #c94000;
     color: white;
     padding: 0 4%;
+    display:space-between;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-5%);
 }
 
 .top-links {
-    min-height: 68px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -42,7 +46,7 @@ body {
 
 .banking-link {
     background: #ad3500;
-    padding: 24px;
+    padding: 24px 24px;
     /* transform: skewX(-23deg); */
 
 }
@@ -74,7 +78,7 @@ body {
 
 .logo {
     text-align: center;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 .logo-box {
@@ -169,7 +173,7 @@ body {
     width: 300px;
     min-height: 284px;
     background: #f7f7f7;
-    box-shadow: 0 2px 7px #0002;
+    /* box-shadow: 0 2px 7px #0002; */
     text-align: center;
 }
 
@@ -673,4 +677,19 @@ body {
     .phone-numbers li {
         white-space: normal;
     }
+}
+
+.footer-bottom {
+    min-height: 130px;
+    background:#424A52;
+    color: white;
+    padding: 40px 4%;
+}
+.footer-bottom p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    line-height: 1.8;
+    
+
 }
