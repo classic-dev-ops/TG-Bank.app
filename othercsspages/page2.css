@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* TOP ORANGE BAR */
+.top-bar {
+    min-height: 50px;
+    background: #c94000;
+    color: white;
+    padding: 0 4%;
+    display:space-between;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-5%);
+}
+/* .top-bar {
+    min-height: 50px;
+    background: #c94000;
+    color: white;
+    padding: 0 4%;
+    display:space-between;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-5%);
+} */
+
+.top-links {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.top-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.country {
+    background: #f8e5dc;
+    color: #333;
+    border-radius: 15px;
+    padding: 9px 14px;
+}
+
+.banking-link {
+    background: #ad3500;
+    padding: 24px 24px;
+    /* transform: skewX(-23deg); */
+
+}
+
+/* MAIN WHITE NAVIGATION */
+.main-nav {
+    min-height: 107px;
+    padding: 15px 13.3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: white;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #303943;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.logo {
+    text-align: center;
+    /* flex-shrink: 0; */
+}
+
+.logo-box {
+    width: 88px;
+    height: 88px;
+    background: #ed3d00;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+}
+
+.logo-square {
+    width: 20px;
+    height: 20px;
+    background: white;
+    align-self: flex-end;
+    margin-right: 16px;
+}
+
+.logo small {
+    display: block;
+    margin-top: 7px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.chat-button {
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    width: 72px;
+    height: 72px;
+    border: none;
+    border-radius: 50%;
+    background: #e94724;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.chat-count {
+    position: absolute;
+    top: -7px;
+    right: -3px;
+    width: 23px;
+    height: 23px;
+    background: #e94724;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+    .main-nav {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .top-bar,
+    .top-links {
+        padding: 10px;
+    }
+
+    .top-links {
+        gap: 14px;
+    }
+
+    .top-links a {
+        font-size: 13px;
+    }
+
+    .banking-link {
+        padding: 10px;
+    }
+
+    .main-nav {
+        padding: 18px;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .logo-box {
+        width: 65px;
+        height: 65px;
+        font-size: 18px;
+    }
+
+    .logo small {
+        font-size: 8px;
+    }
+
+    .chat-button {
+        width: 55px;
+        height: 55px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+.business-banner {
+    width: 100%;
+    height: 558px;
+    background-image: url("../image/2nd\ page\ banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    padding: 54px 0 0 13%;
+}
+
+/* White text panel */
+.banner-content {
+    width: 578px;
+    padding: 40px 55px 46px;
+    background-color: rgba(255, 255, 255, 0.82);
+}
+
+/* Main heading */
+.banner-content h1 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.28;
+    color: #444c54;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.banner-content p {
+    font-size: 20px;
+    line-height: 1.55;
+    color: #596773;
+    margin-bottom: 36px;
+}
+
+/* Get Started button */
+.start-button {
+    display: inline-block;
+    background-color: #d44000;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 23px 38px;
+}
+
+/* Business options section */
+.business-options {
+    width: 100%;
+    padding: 55px 30px;
+}
+
+/* Six cards in one row */
+.business-container {
+    max-width: 1330px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 35px;
+}
+
+/* Individual cards */
+.business-card {
+    height: 227px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Card headings */
+.business-card h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #344252;
+}
+
+@media (max-width: 1100px) {
+
+    .business-banner {
+        padding-left: 6%;
+    }
+
+    .business-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .business-banner {
+        height: auto;
+        min-height: 500px;
+        padding: 35px 20px;
+        align-items: center;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .banner-content h1 {
+        font-size: 32px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .start-button {
+        padding: 17px 25px;
+    }
+
+    .business-options {
+        padding: 35px 20px;
+    }
+
+    .business-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .business-card {
+        height: 170px;
+    }
+
+    .business-card h2 {
+        font-size: 16px;
+    }
+}
+.site-footer {
+    width: 100%;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #34485c;
+    padding: 55px 0 25px;
+    box-sizing: border-box;
+}
+
+/* CENTER THE ENTIRE FOOTER */
+.footer-container {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+/* FIVE EVENLY SPACED COLUMNS */
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: 35px;
+    align-items: start;
+    width: 100%;
+}
+
+.footer-column {
+    min-width: 0;
+}
+
+.footer-column h3 {
+    margin: 0 0 26px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #172b3e;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin: 0 0 23px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #526276;
+    overflow-wrap: anywhere;
+}
+
+.footer-column .footer-extra {
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+/* HORIZONTAL LINE */
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: #dedede;
+    margin: 48px 0 40px;
+}
+
+/* LOGO AND CONTACT NUMBERS */
+.footer-contact {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer-logo img {
+    display: block;
+    width: 205px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.phone-numbers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px 22px;
+}
+
+.phone-numbers li {
+    min-width: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #526276;
+    white-space: nowrap;
+}
+
+@media (max-width: 1050px) {
+    .footer-columns {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+
+    .footer-contact {
+        grid-template-columns: 200px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .phone-numbers {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding-top: 35px;
+    }
+
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+    }
+
+    .footer-column li {
+        overflow-wrap: anywhere;
+    }
+
+    .footer-divider {
+        margin: 35px 0;
+    }
+
+    .footer-contact {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .phone-numbers {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .phone-numbers li {
+        white-space: normal;
+    }
+}
+
+.footer-bottom {
+    min-height: 130px;
+    background:#424A52;
+    color: white;
+    padding: 40px 4%;
+}
+.footer-bottom p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    line-height: 1.8;
+    
+
+}
