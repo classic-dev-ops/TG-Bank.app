@@ -9,7 +9,6 @@ body {
     color: #333;
 }
 
-/* TOP ORANGE BAR */
 .top-bar {
     min-height: 50px;
     background: #c94000;
@@ -51,7 +50,6 @@ body {
 
 }
 
-/* MAIN WHITE NAVIGATION */
 .main-nav {
     min-height: 107px;
     padding: 15px 13.3%;
@@ -241,7 +239,6 @@ body {
     }
 }
 
-/* FIRST SECTION: PERSONAL LOANS */
 
 .loans-banner {
     width: 100%;
@@ -250,7 +247,6 @@ body {
 }
 
 
-/* BREADCRUMB */
 
 .breadcrumb {
     width: 74%;
@@ -271,7 +267,6 @@ body {
 }
 
 
-/* HERO IMAGE */
 
 .loan-hero {
     width: 74%;
@@ -297,7 +292,6 @@ body {
 }
 
 
-/* MAIN HEADING */
 
 .loan-hero-content h1 {
     font-size: 48px;
@@ -307,7 +301,6 @@ body {
 }
 
 
-/* ORANGE SUBHEADING */
 
 .loan-hero-content h2 {
     font-size: 24px;
@@ -317,7 +310,6 @@ body {
 }
 
 
-/* DESCRIPTION */
 
 .loan-hero-content p {
     font-size: 21px;
@@ -326,7 +318,6 @@ body {
 }
 
 
-/* SECOND SECTION: ALL LOANS */
 
 .all-loans {
     width: 74%;
@@ -338,7 +329,6 @@ body {
 }
 
 
-/* INTRODUCTION */
 
 .loans-intro h2 {
     font-size: 22px;
